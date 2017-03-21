@@ -1,0 +1,63 @@
+<resources>
+    <string name="notification_channel_followers">Follower Notification Channel</string>
+    <string name="notification_channel_direct_message">Direct Messages Channel</string>
+
+    <!-- UI Strings -->
+    <string name="got_to_settings_button">Go to Settings</string>
+
+    <string name="test_follower_title">Test Follower Notifications</string>
+    <string name="test_birthday_follower_button">Follower Added</string>
+    <string name="test_life_follower_button">Follower Removed</string>
+    <string name="follower_notification_settings_button">Follower Notification Settings</string>
+
+    <string name="test_dm_title">Test Direct Message Notifications</string>
+    <string name="test_coworker_dm_button">From Coworker</string>
+    <string name="test_friend_dm_button">From Friend</string>
+    <string name="dm_notification_settings_button">DM Notification Settings</string>
+
+    <!-- Notification Strings -->
+    <string name="follower_title_notification">Follower</string>
+    <string name="direct_message_title_notification">Direct Message</string>
+
+    <string name="follower_added_notification_body">%1$s is now following you!</string>
+    <string name="follower_removed_notification_body">%1$s has stopped following you.</string>
+
+    <string name="dm_friend_notification_body">%1$s: What\'s up?</string>
+    <string name="dm_coworker_notification_body">%1$s: Have you finished the report?</string>
+    <string name="error_click">Unknown click event.</string>
+
+    <!-- Names -->
+    <string-array name="names_array">
+        <item>Ethan</item>
+        <item>Mia</item>
+        <item>Mohamed</item>
+        <item>Fatima</item>
+        <item>Daniel</item>
+        <item>Luis</item>
+        <item>Tomás</item>
+        <item>Sofia</item>
+        <item>Camila</item>
+        <item>Somchai</item>
+        <item>Minato</item>
+        <item>Noam</item>
+        <item>Feng</item>
+        <item>Nor</item>
+        <item>Seo-yeon</item>
+        <item>Xioamei</item>
+        <item>Hugo</item>
+        <item>Jonas</item>
+        <item>Oliver</item>
+        <item>Francesco</item>
+        <item>Maxim</item>
+        <item>Yusuf</item>
+        <item>Laia</item>
+        <item>Emma</item>
+        <item>Angeliki</item>
+        <item>Zuzanna</item>
+        <item>Ioana</item>
+        <item>Zeynep</item>
+        <item>Hiro</item>
+        <item>Mareva</item>
+    </string-array>
+
+</resources>
