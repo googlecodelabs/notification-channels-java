@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.notificationchannels.MainActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="7">
+
+        <TextView
+            android:id="@+id/test_follower_channel_title"
+            style="?android:attr/titleTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:hint="@string/test_follower_title" />
+
+
+        <Button
+            android:id="@+id/follow_button"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/test_birthday_follower_button" />
+
+        <Button
+            android:id="@+id/un_follow_button"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/test_life_follower_button" />
+
+        <Button
+            android:id="@+id/follower_channel_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:drawableStart="@android:drawable/ic_menu_preferences"
+            android:text="@string/follower_notification_settings_button" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal" />
+
+        <TextView
+            android:id="@+id/test_dm_channel_title"
+            style="?android:attr/titleTextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:hint="@string/test_dm_title" />
+
+        <Button
+            android:id="@+id/coworker_dm_button"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/test_coworker_dm_button" />
+
+        <Button
+            android:id="@+id/friend_dm_button"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:text="@string/test_friend_dm_button" />
+
+
+        <Button
+            android:id="@+id/dm_channel_settings_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill_horizontal"
+            android:drawableStart="@android:drawable/ic_menu_preferences"
+            android:text="@string/dm_notification_settings_button" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/go_to_settings_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/got_to_settings_button" />
+
+
+</RelativeLayout>
