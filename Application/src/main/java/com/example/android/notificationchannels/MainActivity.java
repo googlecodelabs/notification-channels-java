@@ -109,7 +109,7 @@ public class MainActivity extends Activity {
      * @param channel Name of channel to configure
      */
     private void goToNotificationChannelSettings(String channel) {
-        // Skeleton method to be completed later
+        // TODO Complete this method to open the *channel* specific settings
     }
 
     /**
@@ -139,6 +139,7 @@ public class MainActivity extends Activity {
                     sendNotification(NOTIFICATION_UNFOLLOW);
                     break;
                 case R.id.follower_channel_settings_button:
+                    // TODO Pass in the correct channel ID to the method
                     goToNotificationChannelSettings("");
                     break;
                 case R.id.friend_dm_button:
@@ -148,6 +149,7 @@ public class MainActivity extends Activity {
                     sendNotification(NOTIFICATION_DM_COWORKER);
                     break;
                 case R.id.dm_channel_settings_button:
+                    // TODO Pass in the correct channel ID to the method
                     goToNotificationChannelSettings("");
                     break;
                 case R.id.go_to_settings_button:
