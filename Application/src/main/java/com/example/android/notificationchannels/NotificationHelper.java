@@ -34,6 +34,7 @@ import java.util.Random;
 class NotificationHelper extends ContextWrapper {
     private NotificationManager mNotificationManager;
     public static final String FOLLOWERS_CHANNEL = "follower";
+    // TODO You should create a constant for the direct message channel ID here as well
 
     /**
      * Registers notification channels, which can be used later by individual notifications.
@@ -57,6 +58,7 @@ class NotificationHelper extends ContextWrapper {
         // Submit the notification channel object to the notification manager
         getNotificationManager().createNotificationChannel(followersChannel);
 
+        // TODO Create the channel object for Direct Messages here
     }
 
     /**
