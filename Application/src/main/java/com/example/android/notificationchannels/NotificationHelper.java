@@ -77,8 +77,7 @@ class NotificationHelper extends ContextWrapper {
      * @return A Notification.Builder configured with the selected channel and details
      */
     public Notification.Builder getNotificationFollower(String title, String body) {
-        // TODO Create the notification in the followers channel by passing in the channel ID
-        return new Notification.Builder(getApplicationContext())
+        return new Notification.Builder(getApplicationContext(), FOLLOWERS_CHANNEL)
                 .setContentTitle(title)
                 .setContentText(body)
                 .setSmallIcon(getSmallIcon())
@@ -96,8 +95,7 @@ class NotificationHelper extends ContextWrapper {
      * @return A Notification.Builder configured with the selected channel and details
      */
     public Notification.Builder getNotificationDM(String title, String body) {
-        // TODO Create the notification in the direct message channel by passing in the channel ID
-        return new Notification.Builder(getApplicationContext())
+        return new Notification.Builder(getApplicationContext(), DIRECT_MESSAGE_CHANNEL)
                 .setContentTitle(title)
                 .setContentText(body)
                 .setSmallIcon(getSmallIcon())
