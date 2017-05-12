@@ -109,7 +109,10 @@ public class MainActivity extends Activity {
      * @param channel Name of channel to configure
      */
     private void goToNotificationChannelSettings(String channel) {
-        // TODO Complete this method to open the *channel* specific settings
+        Intent intent = new Intent(Settings.ACTION_CHANNEL_NOTIFICATION_SETTINGS);
+        intent.putExtra(Settings.EXTRA_APP_PACKAGE, getPackageName());
+        intent.putExtra(Settings.EXTRA_CHANNEL_ID, channel);
+        startActivity(intent);
     }
 
     /**
@@ -139,8 +142,7 @@ public class MainActivity extends Activity {
                     sendNotification(NOTIFICATION_UNFOLLOW);
                     break;
                 case R.id.follower_channel_settings_button:
-                    // TODO Pass in the correct channel ID to the method
-                    goToNotificationChannelSettings("");
+                    goToNotificationChannelSettings(NotificationHelper.FOLLOWERS_CHANNEL);
                     break;
                 case R.id.friend_dm_button:
                     sendNotification(NOTIFICATION_DM_FRIEND);
@@ -149,8 +151,7 @@ public class MainActivity extends Activity {
                     sendNotification(NOTIFICATION_DM_COWORKER);
                     break;
                 case R.id.dm_channel_settings_button:
-                    // TODO Pass in the correct channel ID to the method
-                    goToNotificationChannelSettings("");
+                    goToNotificationChannelSettings(NotificationHelper.DIRECT_MESSAGE_CHANNEL);
                     break;
                 case R.id.go_to_settings_button:
                     goToNotificationSettings();
