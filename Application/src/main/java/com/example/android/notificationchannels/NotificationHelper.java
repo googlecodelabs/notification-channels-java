@@ -40,7 +40,7 @@ class NotificationHelper extends ContextWrapper {
      */
     public NotificationHelper(Context context) {
         super(context);
-
+        // TODO Explicitly set badging to true for both of these channels
         // Create the channel object with the unique ID FOLLOWERS_CHANNEL
         NotificationChannel followersChannel =
                 new NotificationChannel(
@@ -77,6 +77,7 @@ class NotificationHelper extends ContextWrapper {
      * @return A Notification.Builder configured with the selected channel and details
      */
     public Notification.Builder getNotificationFollower(String title, String body) {
+        // TODO Add a pending intent, which is required for badging
         return new Notification.Builder(getApplicationContext(), FOLLOWERS_CHANNEL)
                 .setContentTitle(title)
                 .setContentText(body)
@@ -95,6 +96,7 @@ class NotificationHelper extends ContextWrapper {
      * @return A Notification.Builder configured with the selected channel and details
      */
     public Notification.Builder getNotificationDM(String title, String body) {
+        // TODO Add a pending intent, which is required for badging
         return new Notification.Builder(getApplicationContext(), DIRECT_MESSAGE_CHANNEL)
                 .setContentTitle(title)
                 .setContentText(body)
